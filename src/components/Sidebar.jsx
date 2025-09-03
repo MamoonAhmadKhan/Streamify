@@ -5,7 +5,7 @@ const Sidebar = () => {
   const sidebar = useSelector((store) => store.app.isMenuOpen);
 
   return sidebar === true ? (
-    <div className='p-3 m-1 shadow shadow-white col-span-1'>
+    <div className='p-3 w-64 m-1 shadow shadow-white col-span-1'>
       <ul className='mb-4 font-semibold cursor-pointer'>
         <li>Home</li>
         <li>Shorts</li>
