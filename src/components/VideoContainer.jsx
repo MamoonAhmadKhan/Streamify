@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import VideoCard from './VideoCard';
 import { YT_API } from '../utils/youtubeApi';
+import { Link } from 'react-router-dom';
 
 const VideoContainer = () => {
   const [ytData, setYtData] = useState([]);
@@ -19,7 +20,9 @@ const VideoContainer = () => {
     <div className='flex flex-wrap ml-2 mt-4'>
       {
         ytData.map((item) => (
-          <VideoCard key={item.id} info={item} />
+          <Link key={item.id} to={`/watch?v=${item.id}`} >
+          <VideoCard info={item} />
+          </Link>
         ))
       }
     </div>
