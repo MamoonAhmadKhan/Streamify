@@ -26,7 +26,7 @@ const Header = () => {
     //const res = await fetch(`${YT_SUGGESTION_API}${searchQuery}`);
     //const data = await res.json();
     // setSuggestions(data);
-    console.log(searchQuery);
+    console.log(debouncedSearch);
     } catch (err) {
       console.error(`Error fetching suggestions : ${err}`);
     }
