@@ -4,10 +4,10 @@ import React from 'react'
 
 const ChatMessage = ({ name, message }) => {
   return (
-    <div className='flex items-center shadow-sm pt-5'>
+    <div className='flex items-center shadow-sm pt-3 pb-3'>
         <FontAwesomeIcon icon={faCircleUser} size="lg" />
-        <span className='font-semibold text-sm px-2'>{name}</span>
-        <span className='text-xs'>{message}</span>
+        <span className='font-semibold text-xs px-1'>{name}</span>
+        <span className='text-xs pl-2'>{message}</span>
     </div>
   )
 }

@@ -16,17 +16,14 @@ const Header = () => {
   const debouncedSearch = useDebounce(searchQuery, 200);
 
   useEffect(() => {
-    if (debouncedSearch.trim() === "") {
-    setSuggestions([]);
-    return;
-  }
 
     const fetchSuggestions = async () => {
     try {
-    //const res = await fetch(`${YT_SUGGESTION_API}${searchQuery}`);
-    //const data = await res.json();
+      // We can also implement cache mechanism for api search with redux-toolkit for repeated api call for same keystroke but the api is not working.
+    // const res = await fetch(`${YT_SUGGESTION_API}${debouncedSearch}`);
+    // const data = await res.json();
     // setSuggestions(data);
-    console.log(debouncedSearch);
+    //console.log(debouncedSearch);
     } catch (err) {
       console.error(`Error fetching suggestions : ${err}`);
     }

@@ -5,20 +5,20 @@ const CommentsContainer = () => {
   const commentsData = [
     {
       name: "Mamoon Ahmad",
-      text: "lorem ipsum dolor netanyahu suar pro max",
+      text: "lorem ipsum dolor amet react with mamoon",
       replies: [],
     },
     {
       name: "Mamoon Ahmad",
-      text: "lorem ipsum dolor netanyahu suar pro max",
+      text: "lorem ipsum dolor amet react with mamoon",
       replies: [
         {
           name: "Mamoon Ahmad",
-          text: "lorem ipsum dolor netanyahu suar pro max",
+          text: "lorem ipsum dolor amet react with mamoon",
           replies: [
             {
               name: "Mamoon Ahmad",
-              text: "lorem ipsum dolor netanyahu suar pro max",
+              text: "lorem ipsum dolor amet react with mamoon",
               replies: [],
             },
           ],
@@ -27,23 +27,23 @@ const CommentsContainer = () => {
     },
     {
       name: "Mamoon Ahmad",
-      text: "lorem ipsum dolor netanyahu suar pro max",
+      text: "lorem ipsum dolor amet react with mamoon",
       replies: [
         {
           name: "Mamoon Ahmad",
-          text: "lorem ipsum dolor netanyahu suar pro max",
+          text: "lorem ipsum dolor amet react with mamoon",
           replies: [
             {
               name: "Mamoon Ahmad",
-              text: "lorem ipsum dolor netanyahu suar pro max",
+              text: "lorem ipsum dolor amet react with mamoon",
               replies: [
                 {
                   name: "Mamoon Ahmad",
-                  text: "lorem ipsum dolor netanyahu suar pro max",
+                  text: "lorem ipsum dolor amet react with mamoon",
                   replies: [
                     {
                       name: "Mamoon Ahmad",
-                      text: "lorem ipsum dolor netanyahu suar pro max",
+                      text: "lorem ipsum dolor amet react with mamoon",
                       replies: [],
                     },
                   ],
@@ -56,27 +56,27 @@ const CommentsContainer = () => {
     },
     {
       name: "Mamoon Ahmad",
-      text: "lorem ipsum dolor netanyahu suar pro max",
+      text: "lorem ipsum dolor amet react with mamoon",
       replies: [],
     },
     {
       name: "Mamoon Ahmad",
-      text: "lorem ipsum dolor netanyahu suar pro max",
+      text: "lorem ipsum dolor amet react with mamoon",
       replies: [],
     },
     {
       name: "Mamoon Ahmad",
-      text: "lorem ipsum dolor netanyahu suar pro max",
+      text: "lorem ipsum dolor amet react with mamoon",
       replies: [],
     },
     {
       name: "Mamoon Ahmad",
-      text: "lorem ipsum dolor netanyahu suar pro max",
+      text: "lorem ipsum dolor amet react with mamoon",
       replies: [],
     },
     {
       name: "Mamoon Ahmad",
-      text: "lorem ipsum dolor netanyahu suar pro max",
+      text: "lorem ipsum dolor amet react with mamoon",
       replies: [],
     },
   ];

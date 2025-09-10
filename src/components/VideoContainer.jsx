@@ -17,7 +17,7 @@ const VideoContainer = () => {
   }, []);
 
   return (
-    <div className='flex flex-wrap ml-2 mt-4'>
+    <div className='flex flex-wrap ml-2 mt-1'>
       {
         ytData.map((item) => (
           <Link key={item.id} to={`/watch?v=${item.id}`} >
