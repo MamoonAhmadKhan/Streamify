@@ -2,9 +2,8 @@ import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { faCircleUser } from "@fortawesome/free-solid-svg-icons";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { toggleMenu } from "../toolkit/appSlice";
-import { YT_SUGGESTION_API } from "../utils/youtubeApi";
 import { useDebounce } from "../customHooks/useDebounce";
 
 const Header = () => {
@@ -16,20 +15,7 @@ const Header = () => {
   const debouncedSearch = useDebounce(searchQuery, 200);
 
   useEffect(() => {
-
-    const fetchSuggestions = async () => {
-    try {
-      // We can also implement cache mechanism for api search with redux-toolkit for repeated api call for same keystroke but the api is not working.
-    // const res = await fetch(`${YT_SUGGESTION_API}${debouncedSearch}`);
-    // const data = await res.json();
-    // setSuggestions(data);
-    //console.log(debouncedSearch);
-    } catch (err) {
-      console.error(`Error fetching suggestions : ${err}`);
-    }
-  };
-
-  fetchSuggestions();
+    setSuggestions(debouncedSearch);
   }, [debouncedSearch]);
 
   const toggleSidebarHandler = () => {
@@ -47,10 +33,10 @@ const Header = () => {
         <h1 className="ml-8 text-2xl font-bold text-cyan-500">STREAMIFY</h1>
       </div>
 
-      <div className="col-span-8">
-        <div className="flex items-center justify-center input-search">
+      <div className="col-span-8 w-full">
+        <div className="flex items-center justify-baseline input-search">
           <input
-            className="border-1 p-1.5 w-4/6 rounded-l-full"
+            className="border-1 p-1.5 w-4/6 rounded-l-full outline-none"
             type="text"
             placeholder="Search"
             value={searchQuery}
@@ -64,7 +50,7 @@ const Header = () => {
         </div>
         {showSuggestions && suggestions.length !== 0 && (
           <div
-            className={`fixed bg-gray-800 text-white left-116 w-[33rem] py-3 px-2 rounded-lg shadow-xl mt-1`}
+            className={`fixed bg-gray-800 text-white w-fit py-3 px-2 rounded-lg shadow-xl mt-1`}
           >
             <ul className="space-y-2 p-1">
               {suggestions.map((s) => {
