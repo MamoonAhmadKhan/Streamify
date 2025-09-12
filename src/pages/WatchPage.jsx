@@ -16,6 +16,7 @@ import {
   faThumbsDown,
   faThumbsUp,
 } from "@fortawesome/free-regular-svg-icons";
+import freeVideo from '../assets/free.mp4';
 
 const WatchPage = () => {
   const [showDescription, setShowDescription] = useState(true);
@@ -48,20 +49,17 @@ const WatchPage = () => {
   ? Number(viewCount).toLocaleString("en-US") 
   : "0";
 
+
   return (
-    <div className="w-full mx-8 my-8 space-y-2">
-      <div className="flex items-center justify-between space-x-5">
+    <div className="w-full mx-5 my-8 space-y-2">
+      <div className="flex items-cente justify-center">
         <div className="w-full">
-          <iframe
-            className="rounded-xl"
-            width="800"
-            height="450"
-            src={`https://www.youtube.com/embed/${searchParams.get("v")}`}
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe>
+          <video
+            className="rounded-xl w-[800px] h-[450px]"
+            controls
+          >
+            <source src={freeVideo} type="video/mp4" />
+          </video>
         </div>
         <LiveChat />
       </div>
