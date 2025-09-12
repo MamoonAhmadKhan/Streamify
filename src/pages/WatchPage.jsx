@@ -16,7 +16,7 @@ import {
   faThumbsDown,
   faThumbsUp,
 } from "@fortawesome/free-regular-svg-icons";
-import freeVideo from '../assets/free.mp4';
+import freeVideo from '../pages/free.mp4';
 
 const WatchPage = () => {
   const [showDescription, setShowDescription] = useState(true);
