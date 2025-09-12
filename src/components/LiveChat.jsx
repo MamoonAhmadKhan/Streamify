@@ -26,7 +26,7 @@ const LiveChat = () => {
   }, []);
 
   return (
-    <div className="w-full h-[450px]">
+    <div className="w-full h-[450px] mr-15">
       <h1 className="text-center p-2 bg-gray-700 rounded-lg shadow cursor-pointer">
         LiveChat
       </h1>
@@ -58,7 +58,7 @@ const LiveChat = () => {
           }}
         />
         <button 
-        className="bg-slate-900 p-1 text-sm rounded-lg font-bold"
+        className="bg-slate-900 p-1 text-sm rounded-lg font-bold cursor-pointer"
         >
           Send
         </button>

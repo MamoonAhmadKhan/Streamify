@@ -5,7 +5,7 @@ import VideoContainer from './VideoContainer';
 const MainContainer = () => {
   
   return (
-    <div className='col-span-11 flex flex-wrap'>
+    <div className='w-full col-span-11 flex flex-wrap'>
         <ButtonList />
         <VideoContainer />
     </div>

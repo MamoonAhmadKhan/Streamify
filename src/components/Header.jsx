@@ -30,7 +30,7 @@ const Header = () => {
           onClick={() => toggleSidebarHandler()}
           icon={faBars}
         />
-        <h1 className="ml-8 text-2xl font-bold text-cyan-500">STREAMIFY</h1>
+        <h1 className="ml-8 text-2xl font-bold text-cyan-500 cursor-pointer">STREAMIFY</h1>
       </div>
 
       <div className="col-span-8 w-full">

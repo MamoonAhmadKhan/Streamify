@@ -4,6 +4,11 @@ const VideoCard = (props) => {
   const { snippet, statistics } = props?.info;
   const { channelTitle, title, thumbnails } = snippet;
 
+  const viewCount = statistics?.viewCount;
+  const formattedViewCount = viewCount 
+  ? Number(viewCount).toLocaleString("en-US") 
+  : "0";
+
   return (
     <div className='m-1 mb-3 h-full w-80 p-3 pb-4 rounded-2xl cursor-pointer shadow-lg shadow-black'>
       <div className='cardImage mb-2 pt-2'>
@@ -12,7 +17,7 @@ const VideoCard = (props) => {
       <div className='cardDetails flex flex-col flex-wrap space-y-1'>
         <h3 className='text-lg font-bold'>{title}</h3>
         <h4 className='text-gray-300 hover:text-white'>{channelTitle}</h4>
-        <p>{statistics.viewCount} views</p>
+        <p>{formattedViewCount} views</p>
       </div>
     </div>
   )
