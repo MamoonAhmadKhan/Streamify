@@ -8,9 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-<<<<<<< HEAD
-  base: process.env.VITE_BASE_PATH || "/Streamify",
-=======
   base: "/",
->>>>>>> 3cc8a862d685ddd7c85e8aa2359c5a8d92faf3a0
 })

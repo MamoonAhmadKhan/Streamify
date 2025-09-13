@@ -16,6 +16,7 @@ const Header = () => {
 
   useEffect(() => {
     setSuggestions(debouncedSearch);
+    console.log(suggestions);
   }, [debouncedSearch]);
 
   const toggleSidebarHandler = () => {
